@@ -1,0 +1,10 @@
+.DS_Store
+.env*
+# Terraform Files
+*/.terraform
+*terraform.tfvars*
+*.tfstate*
+backup.tf
+# Layer Source
+node_modules
+python
