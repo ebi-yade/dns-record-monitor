@@ -21,7 +21,7 @@ def lambda_handler(event, context):
     logger.info(status)
     status += '\n'+event['time']+'\n'
 
-    for addr in socket.getaddrinfo('t.livepocket.jp', host_port):
+    for addr in socket.getaddrinfo(host_name, host_port):
         if addr[1] == socket.SOCK_STREAM:
             logger.info(addr[4][0])
             status += '\n'+addr[4][0]
