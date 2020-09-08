@@ -5,6 +5,8 @@
 *terraform.tfvars*
 *.tfstate*
 backup.tf
+terraform/archive/*
+!terraform/archive/.keep
 # Layer Source
 node_modules
 python

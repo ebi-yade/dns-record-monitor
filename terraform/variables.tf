@@ -1,3 +1,6 @@
+#####################################
+# General
+#####################################
 variable region {
   type    = string
   default = "ap-northeast-1"
@@ -25,13 +28,19 @@ variable workspace_params {
   type = map
   default = {
     default = {
-      host_name = "t.livepocket.jp"
-      host_port = "443"
+      host_name = "example.org"
+      host_port = "80"
     }
   }
 }
 
+#####################################
+# Peculiar To This Repo
+#####################################
+
+# Twitter Config
 variable consumer_key {}
 variable consumer_secret {}
 variable access_key {}
 variable access_secret {}
+
