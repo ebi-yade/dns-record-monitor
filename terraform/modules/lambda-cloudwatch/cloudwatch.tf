@@ -10,7 +10,7 @@ resource "aws_cloudwatch_log_group" "lambdaInvoke" {
 
 resource "aws_cloudwatch_event_rule" "this" {
   name                = "lambda-${var.lambda_func_name}"
-  schedule_expression = "cron(* */${var.span} * * ? *)"
+  schedule_expression = "cron(27 */${var.span} * * ? *)"
 }
 
 resource "aws_cloudwatch_event_target" "this" {
