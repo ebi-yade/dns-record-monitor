@@ -16,7 +16,7 @@ run:
 make tf-apply WS=<workspace>
 ```
 
-To create new workspace and switch it, run:
+To create a new workspace and switch it, run:
 
 ```sh
 cd terraform
